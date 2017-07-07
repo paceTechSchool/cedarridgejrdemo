@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cedar Ridge Jr. Flex Demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <style>
+      .form {
+      width: 250px;
+      margin: 10px;
+      }
+      #leftcontainer {
+      width: 270px;
+      height: 646px;
+      vertical-align: top;
+      border: 2px solid black;
+      display: inline-block;
+      }
+      #centercontainer {
+      width: 690px;
+      height: 630px;
+      vertical-align: top;
+      /*border: 1px solid black;*/
+      display: inline-block;
+      }
+      table {
+      border: 1px solid black;
+      width: 100%;
+      height: 100%;
+      }
+      td {
+      background-color: #86898e;
+      }
+      .firsttwocolums {
+      background-color: white;
+      width: 40px;
+      text-align: center;
+      }
+      .tablerowtop {
+      width: 110px;
+      font-weight: bold;
+      text-align: center;
+      background-color: white;
+      }
+      #flight1colorkey {
+      background-color: #4286f4;
+      display: inline-block;
+      height: 12px;
+      width: 10px;
+      padding-left: 65px;
+      }
+      #flight2colorkey {
+      background-color: #fbff49;
+      display: inline-block;
+      height: 12px;
+      width: 10px;
+      padding-left: 65px;
+      }
+      #flight3colorkey {
+      background-color: #9ed177;
+      display: inline-block;
+      height: 12px;
+      width: 10px;
+      padding-left: 65px;
+      }
+      #flight4colorkey {
+      background-color: #7f4aa5;
+      display: inline-block;
+      height: 12px;
+      width: 10px;
+      padding-left: 65px;
+      }
+      #flight5colorkey {
+      background-color: #ff42fb;
+      display: inline-block;
+      height: 12px;
+      width: 10px;
+      padding-left: 65px;
+      }
+      #flight6colorkey {
+      background-color: #ffbd87;
+      display: inline-block;
+      height: 12px;
+      width: 10px;
+      padding-left: 65px;
+      }
+      #flight7colorkey {
+      background-color: #cff7f9;
+      display: inline-block;
+      height: 12px;
+      width: 10px;
+      padding-left: 65px;
+      }
+      #flight8colorkey {
+      background-color: #ad0000;
+      display: inline-block;
+      height: 12px;
+      width: 10px;
+      padding-left: 65px;
+      }
+  	</style>
+  </head>
+  <body>
+  <div id="wrapper">
+  <div id="leftcontainer">
+    <br />
+    <span style="margin-left: 25px;font-size: 20px;">Cedar Ridge Jr. School</span>
+    <form name="flight1" class="form">
+       <fieldset>
+        <legend>Flight 1</legend>
+      	<input type="radio" name="flight1option" onclick="flight13();">3
+      	<input type="radio" name="flight1option" onclick="flight14();">4
+      	<input type="radio" name="flight1option" onclick="flight1ilt();">ILT
+        <div id="flight1colorkey"></div>
+      </fieldset>
+    </form>
+    <form class="form">
+     <fieldset>
+      <legend>Flight 2</legend>
+    	<input type="radio" name="flight2option" onclick="flight23();">3
+    	<input type="radio" name="flight2option" onclick="flight24();">4
+    	<input type="radio" name="flight2option" onclick="flight2ilt();">ILT
+      <div id="flight2colorkey"></div>
+      </fieldset>
+    </form>
+    	<form class="form">
+     <fieldset>
+      <legend>Flight 3</legend>
+    	<input type="radio" name="flight3option" onclick="flight33();">3
+    	<input type="radio" name="flight3option" onclick="flight34();">4
+    	<input type="radio" name="flight3option" onclick="flight3ilt();">ILT
+     <div id="flight3colorkey"></div>
+     </fieldset>
+    </form>
+    	<form class="form">
+     <fieldset>
+      <legend>Flight 4</legend>
+    	<input type="radio" name="flight4option" onclick="flight43();">3
+    	<input type="radio" name="flight4option" onclick="flight44();">4
+    	<input type="radio" name="flight4option" onclick="flight4ilt();">ILT
+     <div id="flight4colorkey"></div>
+     </fieldset>
+    </form>
+    	<form class="form">
+     <fieldset>
+      <legend>Flight 5</legend>
+    	<input type="radio" name="flight5option" onclick="flight53();">3
+    	<input type="radio" name="flight5option" onclick="flight54();">4
+    	<input type="radio" name="flight5option" onclick="flight5ilt();">ILT
+     <div id="flight5colorkey"></div>
+     </fieldset>
+    </form>
+    	<form class="form">
+     <fieldset>
+      <legend>Flight 6</legend>
+    	<input type="radio" name="flight6option" onclick="flight63();">3
+      <input type="radio" name="flight6option" onclick="flight64();">4
+    	<input type="radio" name="flight6option" onclick="flight6ilt();">ILT
+     <div id="flight6colorkey"></div>
+     </fieldset>
+    </form>
+    	<form class="form">
+     <fieldset>
+      <legend>Flight 7</legend>
+    	<input type="radio" name="flight7option" onclick="flight73();">3
+    	<input type="radio" name="flight7option" onclick="flight74();">4
+    	<input type="radio" name="flight7option" onclick="flight7ilt();">ILT
+     <div id="flight7colorkey"></div>
+     </fieldset>
+    </form>
+    	<form class="form">
+     <fieldset>
+      <legend>Flight 8</legend>
+    	<input type="radio" name="flight8option" onclick="flight83();">3
+      <input type="radio" name="flight8option" onclick="flight84();">4
+    	<input type="radio" name="flight8option" onclick="flight8ilt();">ILT
+     <div id="flight8colorkey"></div>
+     </fieldset>
+    </form>
+    	<form class="form">
+    		<fieldset>
+    		<legend>Lunch</legend>
+    			<input type="radio" name="lunchoption" onclick="lunchMS();">Lunch Jr</input>
+          <!-- <input type="radio" name="lunchoption" onclick="lunchHS();">Lunch HS</input> -->
+    		</fieldset>
+    </form>
+  </div>
+  <div id="centercontainer">
+    <table border="1" style="width:100%; height: 650px;">
+      <tr class="tablerowtop">
+    	<td class="firsttwocolums">Start</td><td class="firsttwocolums">Stop</td><td class="tablerowtop">Mon</td><td class="tablerowtop">Tues</td><td class="tablerowtop">Wed</td><td class="tablerowtop">Thur</td><td class="tablerowtop">Fri</td>
+      </tr>
+      <tr style="text-align: center;">
+        <td class="firsttwocolums">7:50</td><td class="firsttwocolums">8:10</td>
+        <td id="m1"></td>
+        <td id="t1"></td>
+        <td id="w1"></td>
+        <td id="th1"></td>
+        <td id="f1"></td>
+      </tr>
+      <tr>
+        <td class="firsttwocolums">8:10</td><td class="firsttwocolums">8:35</td>
+        <td id="m2"></td>
+        <td id="t2"></td>
+        <td id="w2"></td>
+        <td id="th2"></td>
+        <td id="f2"></td>
+      </tr>
+      <tr style="text-align:center;">
+        <td class="firsttwocolums">8:40</td><td class="firsttwocolums">8:55</td>
+        <td id="m3">Advisory</td>
+        <td id="t3">Advisory</td>
+        <td id="w3">Advisory</td>
+        <td id="th3">Advisory</td>
+        <td id="f3">Advisory</td>
+      </tr>
+      <tr>
+        <td class="firsttwocolums">9:00</td><td class="firsttwocolums">9:25</td>
+        <td id="m4"></td>
+        <td id="t4"></td>
+        <td id="w4"></td>
+        <td id="th4"></td>
+        <td id="f4"></td>
+      </tr>
+      <tr>
+        <td class="firsttwocolums">9:30</td><td class="firsttwocolums">9:55</td>
+        <td id="m5"></td>
+        <td id="t5"></td>
+        <td id="w5"></td>
+        <td id="th5"></td>
+        <td id="f5"></td>
+      </tr>
+      <tr style="text-align:center;">
+        <td class="firsttwocolums">10:00</td><td class="firsttwocolums">10:25</td>
+        <td id="m6"></td>
+        <td id="t6"></td>
+        <td id="w6"></td>
+        <td id="th6"></td>
+        <td id="f6"></td>
+      </tr>
+      <tr>
+        <td class="firsttwocolums">10:30</td><td class="firsttwocolums">10:55</td>
+        <td id="m7"></td>
+        <td id="t7"></td>
+        <td id="w7"></td>
+        <td id="th7"></td>
+        <td id="f7"></td>
+      </tr>
+      <tr style="text-align: center;">
+    	<td class="firsttwocolums">11:00</td><td class="firsttwocolums">11:25</td>
+      <td id="m8"></td>
+      <td id="t8"></td>
+      <td id="w8"></td>
+      <td id="th8"></td>
+      <td id="f8"></td>
+      </tr>
+      <tr style="text-align: center;">
+        <td class="firsttwocolums">11:30</td><td class="firsttwocolums">11:55</td>
+        <td id="m9"></td>
+        <td id="t9"></td>
+        <td id="w9"></td>
+        <td id="th9"></td>
+        <td id="f9"></td>
+      </tr>
+      <tr style="text-align:center;">
+        <td class="firsttwocolums">12:00</td><td class="firsttwocolums">12:25</td>
+        <td id="m10"></td>
+        <td id="t10"></td>
+        <td id="w10"></td>
+        <td id="th10"></td>
+        <td id="f10"></td>
+      </tr>
+      <tr style="text-align:center;">
+        <td class="firsttwocolums">12:30</td><td class="firsttwocolums">12:55</td>
+        <td id="m11"></td>
+        <td id="t11"></td>
+        <td id="w11"></td>
+        <td id="th11"></td>
+        <td id="f11"></td>
+      </tr>
+      <tr>
+        <td class="firsttwocolums">1:00</td><td class="firsttwocolums">1:25</td>
+        <td id="m12"></td>
+        <td id="t12"></td>
+        <td id="w12"></td>
+        <td id="th12"></td>
+        <td id="f12"></td>
+      </tr>
+      <tr>
+        <td class="firsttwocolums">1:30</td><td class="firsttwocolums">1:55</td>
+        <td id="m13"></td>
+        <td id="t13"></td>
+        <td id="w13"></td>
+        <td id="th13"></td>
+        <td id="f13"></td>
+      </tr>
+      <tr>
+        <td class="firsttwocolums">2:00</td><td class="firsttwocolums">2:25</td>
+        <td id="m14"></td>
+        <td id="t14"></td>
+        <td id="w14"></td>
+        <td id="th14"></td>
+        <td id="f14"></td>
+      </tr>
+      <tr>
+        <td class="firsttwocolums">2:30</td><td class="firsttwocolums">2:55</td>
+        <td id="m15"></td>
+        <td id="t15"></td>
+        <td id="w15"></td>
+        <td id="th15"></td>
+        <td id="f15"></td>
+      </tr>
+      <tr>
+        <td class="firsttwocolums">3:00</td><td class="firsttwocolums">3:15</td>
+        <td id="m16"></td>
+        <td id="t16"></td>
+        <td id="w16"></td>
+        <td id="th16"></td>
+        <td id="f16"></td>
+      </tr>
+    </table>
+  </div>
+  </div>
+  <!--<button style="margin-top: 5px; width: 273px; height: 65px;" onclick="printDiv('centercontainer')">Print</button>-->
+  </body>
+
+  <script>
+  var fb13 = ['m1','t1','w1','th1','f1','m2','t2','w2','th2'];
+  var fb14 = ['m1','t1','w1','th1','f1','m2','t2','w2','th2','f2'];
+  //
+  var fb23 = ['m4','m5','w4','w5','w6','f4','f5'];
+  var fb24 = ['m4','m5','w4','w5','w6','th7','f4','f5'];
+  //
+  var fb33 = ['m6','m7','t4','t5','th4','th5','th6'];
+  var fb34 = ['m6','m7','t4','t5','th4','th5','th6','w10'];
+  //
+  var fb43 = ['t6','t7','w7','w8','f6','f7','f8'];
+  var fb44 = ['m9','t6','t7','w7','w8','f6','f7','f8'];
+  //
+  var fb53 = ['m10','m11','m12','w11','w12','f11','f12'];
+  var fb54 = ['m10','m11','m12','w11','w12','f11','f12','th10'];
+  //
+  var fb63 = ['m13','m14','t10','t11','th11','th12','th13'];
+  var fb64 = ['m13','m14','t10','t11','th11','th12','th13','f10'];
+  //
+  var fb73 = ['t12','t13','t14','w13','w14','f13','f14'];
+  var fb74 = ['t12','t13','t14','w13','w14','f13','f14','th14'];
+  //
+  var fb83 = ['m15','t15','w15','th15','f15','m16','w16','th16','f16'];
+  var fb84 = ['m15','t15','w15','th15','f15','m16','t16','w16','th16','f16'];
+
+  function color(e,f){
+    document.getElementById(e).style.backgroundColor = f;
+  }
+
+  function flight13(){
+    for(i=0;i<fb13.length;i++){
+      color(fb13[i],'#4286f4');
+      color('f2','#86898e');
+    }
+  }
+  function flight14(){
+    for(i=0;i<fb14.length;i++){
+      color(fb14[i],'#4286f4');
+    }
+  }
+  function flight1ilt(){
+    for(i=0;i<fb13.length;i++){
+      color(fb13[i],'#86898e');
+    }
+    for(i=0;i<fb14.length;i++){
+      color(fb14[i],'#86898e');
+    }
+  }
+  //
+  function flight23(){
+    for(i=0;i<fb23.length;i++){
+      color(fb23[i],'#fbff49');
+      color('th7','#86898e');
+    }
+  }
+  function flight24(){
+    for(i=0;i<fb24.length;i++){
+      color(fb24[i],'#fbff49');
+    }
+  }
+  function flight2ilt(){
+    for(i=0;i<fb23.length;i++){
+      color(fb23[i],'#86898e');
+    }
+    for(i=0;i<fb24.length;i++){
+      color(fb24[i],'#86898e');
+    }
+  }
+  //
+  function flight33(){
+    for(i=0;i<fb33.length;i++){
+      color(fb33[i],'#9ed177');
+      color('w10','#86898e');
+    }
+  }
+  function flight34(){
+    for(i=0;i<fb34.length;i++){
+      color(fb34[i],'#9ed177');
+    }
+  }
+  function flight3ilt(){
+    for(i=0;i<fb33.length;i++){
+      color(fb33[i],'#86898e');
+    }
+    for(i=0;i<fb34.length;i++){
+      color(fb34[i],'#86898e');
+    }
+  }
+  //
+  function flight43(){
+    for(i=0;i<fb43.length;i++){
+      color(fb43[i],'#7f4aa5');
+      color('m9','#86898e');
+    }
+  }
+  function flight44(){
+    for(i=0;i<fb44.length;i++){
+      color(fb44[i],'#7f4aa5');
+    }
+  }
+  function flight4ilt(){
+    for(i=0;i<fb43.length;i++){
+      color(fb43[i],'#86898e');
+    }
+    for(i=0;i<fb44.length;i++){
+      color(fb44[i],'#86898e');
+    }
+  }
+  //
+  function flight53(){
+    for(i=0;i<fb53.length;i++){
+      color(fb53[i],'#ff42fb');
+      color('th10','#86898e');
+    }
+  }
+  function flight54(){
+    for(i=0;i<fb54.length;i++){
+      color(fb54[i],'#ff42fb');
+    }
+  }
+  function flight5ilt(){
+    for(i=0;i<fb53.length;i++){
+      color(fb53[i],'#86898e');
+    }
+    for(i=0;i<fb54.length;i++){
+      color(fb54[i],'#86898e');
+    }
+  }
+  //
+  function flight63(){
+    for(i=0;i<fb63.length;i++){
+      color(fb63[i],'#ffbd87');
+      color('f10','#86898e');
+    }
+  }
+  function flight64(){
+    for(i=0;i<fb64.length;i++){
+      color(fb64[i],'#ffbd87');
+    }
+  }
+  function flight6ilt(){
+    for(i=0;i<fb63.length;i++){
+      color(fb63[i],'#86898e');
+    }
+    for(i=0;i<fb64.length;i++){
+      color(fb64[i],'#86898e');
+    }
+  }
+  //
+  function flight73(){
+    for(i=0;i<fb73.length;i++){
+      color(fb73[i],'#cff7f9');
+      color('th14','#86898e');
+    }
+  }
+  function flight74(){
+    for(i=0;i<fb74.length;i++){
+      color(fb74[i],'#cff7f9');
+    }
+  }
+  function flight7ilt(){
+    for(i=0;i<fb73.length;i++){
+      color(fb73[i],'#86898e');
+    }
+    for(i=0;i<fb74.length;i++){
+      color(fb74[i],'#86898e');
+    }
+  }
+  //
+  function flight83(){
+    for(i=0;i<fb83.length;i++){
+      color(fb83[i],'#ad0000');
+      color('t16','#86898e');
+    }
+  }
+  function flight84(){
+    for(i=0;i<fb84.length;i++){
+      color(fb84[i],'#ad0000');
+    }
+  }
+  function flight8ilt(){
+    for(i=0;i<fb83.length;i++){
+      color(fb83[i],'#86898e');
+    }
+    for(i=0;i<fb84.length;i++){
+      color(fb84[i],'#86898e');
+    }
+  }
+  //
+  function lunchHS(){
+    document.getElementById('t8').innerHTML = "RTI/ILT";
+    document.getElementById('th8').innerHTML = "RTI/ILT";
+    //
+    document.getElementById('m9').innerHTML = "HS Lunch";
+    document.getElementById('t9').innerHTML = "HS Lunch";
+    document.getElementById('w10').innerHTML = "HS Lunch";
+    document.getElementById('th9').innerHTML = "HS Lunch";
+    document.getElementById('f10').innerHTML = "HS Lunch";
+  }
+  function lunchMS(){
+    document.getElementById('m8').innerHTML = "Jr. Lunch";
+    document.getElementById('t8').innerHTML = "Jr. Lunch";
+    document.getElementById('w9').innerHTML = "Jr. Lunch";
+    document.getElementById('th8').innerHTML = "Jr. Lunch";
+    document.getElementById('f9').innerHTML = "Jr. Lunch";
+    //
+    document.getElementById('t9').innerHTML = "RTI/ILT";
+    document.getElementById('th9').innerHTML = "RTI/ILT";
+  }
+  function printDiv(divName) {
+     	var printContents = document.getElementById(divName).innerHTML;
+    	var originalContents = document.body.innerHTML;
+
+  		document.body.innerHTML = printContents;
+
+       	window.print();
+
+       	document.body.innerHTML = originalContents;
+  	}
+  </script>
+</html>
